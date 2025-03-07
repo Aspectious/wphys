@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="wphys.js"></script>
+        <script src="build/wphys.min.js"></script>
     </head>
     <body>
-        <wphys-box width="512" height="512">
+        <canvas id="wphys-root" width="800" height="500" style="border:1px solid #000000;">
 
-        </wphys-box>
+        </canvas>
+        <script>
+            this.physics = new wphys.wengine();
+        </script>
     </body>
 </html>
